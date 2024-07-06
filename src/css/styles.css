@@ -39,6 +39,13 @@ header {
 main {
     background: #F9FAFB;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 20px;
+    font-weight: 570;
 }
 
 .brand-banner{
@@ -59,4 +66,36 @@ main {
 
 .brand-name {
     letter-spacing: 0.2rem;
+}
+
+.form-control,
+#create-acct-btn,
+#have-acct-msg {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.form-description,
+.input-container {
+    padding: 0 3rem;
+}
+
+
+form {
+    /* border: 2px red solid; */
+    min-width: 100%;
+}
+
+.input-container {
+    padding-left: 3rem;
+    background-color: #FFF;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 1.5rem 0rem;
+    /* display: flex; */
+}
+
+
+#create-acct-btn,
+#have-acct-msg {
+    margin: 0.5rem 3rem;
 }
