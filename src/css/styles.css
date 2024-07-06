@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "space";
+    src: 
+        url("../fonts/space-webfont.woff2") format("woff2"),
+        url("../fonts/space-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.3;
+    display: flex;
+    /* align-items: stretch; */
+    /* justify-content: flex-start; */
+    /* flex-direction: column; */
+
+}
+
+header {
+    background: url(../imgs/alexander-andrews-the-heavens.jpg);
+    background-size: cover;
+    color: white;
+    flex: 0 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background: #F9FAFB;
+    flex: 1;
+}
+
+.brand-banner{
+    background-color: rgba(249, 250, 251, 0.1);
+    display: flex;
+    font-family: space;
+    font-size: 30px;
+    width: auto;
+    align-items: center;
+    padding: 1rem 3rem;
+    margin-top: -300px;
+}
+
+.logo {
+    width: 150px;
+    transform: rotate(30deg);
+}
+
+.brand-name {
+    letter-spacing: 0.2rem;
+}
