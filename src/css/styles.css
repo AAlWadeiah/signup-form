@@ -11,7 +11,9 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    --cta-color: #8C739A
+    --cta-color: #8C739A;
+    --cta-hover-color: #ad9cb7;
+    --cta-focus-color: #685474
 }
 
 body {
@@ -109,13 +111,28 @@ form {
 .form-control input[type=email],
 .form-control input[type=password],
 .form-control input[type=tel] {
-    width: 200px;
+    width: 30ch;
     font-size: 16px;
     background-color: #FFFFFF;
     border: 1px solid #D6D9DC;
     border-radius: 3px;
     padding: 4px 8px;
     margin-top: 2px;
+}
+
+.form-control input[type='text']:focus,
+.form-control input[type='password']:focus,
+.form-control input[type='email']:focus,
+.form-control input[type='tel']:focus {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 20px; /* Remove default red glow in Firefox */
+}
+
+.form-control input[type='password']:not(:placeholder-shown):not(:focus):invalid,
+.form-control input[type='email']:not(:placeholder-shown):not(:focus):invalid,
+.form-control input[type='tel']:not(:placeholder-shown):not(:focus):invalid {
+  border: 1px solid #D55C5F;
+  color: #D55C5F;
+  box-shadow: none; /* Remove default red glow in Firefox */
 }
 
 .cta-btn {
@@ -137,4 +154,17 @@ form {
 #have-acct-msg {
     margin: 0.7rem 3rem;
     font-size: 16px;
+}
+
+.cta-btn:hover,
+.cta-link:hover {
+    cursor: pointer;
+}
+
+.cta-btn:hover {
+    background-color: var(--cta-hover-color);
+}
+
+.cta-btn:focus {
+    background-color: var(--cta-focus-color);
 }

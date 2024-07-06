@@ -36,17 +36,35 @@
             <div class="form-row">
               <div class="form-control">
                 <label for="first-name">FIRST NAME</label>
-                <input type="text" id="first-name" name="first-name" required />
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  required
+                  placeholder="John"
+                />
               </div>
               <div class="form-control">
                 <label for="last-name">LAST NAME</label>
-                <input type="text" id="last-name" name="last-name" required />
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  required
+                  placeholder="Doe"
+                />
               </div>
             </div>
             <div class="form-row">
               <div class="form-control">
                 <label for="email">EMAIL</label>
-                <input type="email" id="email" name="email" required />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="john@example.com"
+                />
               </div>
               <div class="form-control">
                 <label for="phone-number">PHONE NUMBER</label>
@@ -54,7 +72,9 @@
                   type="tel"
                   id="phone-number"
                   name="phone-number"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                   required
+                  placeholder="123-456-7890"
                 />
               </div>
             </div>
@@ -66,6 +86,8 @@
                   id="password1"
                   name="password1"
                   required
+                  placeholder="Password"
+                  minlength="8"
                 />
               </div>
               <div class="form-control">
@@ -75,6 +97,8 @@
                   id="password2"
                   name="password2"
                   required
+                  placeholder="Confirm Password"
+                  minlength="8"
                 />
               </div>
             </div>
